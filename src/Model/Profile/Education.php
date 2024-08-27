@@ -9,11 +9,11 @@ class Education
 
   public function __construct(?bool $level = null)
   {
-    $this->$level = $level;
+    $this->level = $level;
   }
 
   public function getLevel(): ?string
   {
-    return $this->$level;
+    return $this->level;
   }
 }
