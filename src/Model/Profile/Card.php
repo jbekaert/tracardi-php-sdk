@@ -14,7 +14,13 @@ class Card {
 
   private float $points;
 
-  public function __construct(?string $id = null, ?string $name = null, ?string $issuer = null, ?string $expires = null, float $points) {
+  public function __construct(
+      ?string $id = null,
+      ?string $name = null,
+      ?string $issuer = null,
+      ?string $expires = null, ?
+      float $points = 0.0
+  ) {
     $this->id = $id;
     $this->name = $name;
     $this->issuer = $issuer;
